@@ -1,5 +1,5 @@
-let firstNumber = prompt("Ola, digite o primeiro número")
-let secondNumber = prompt("Olá, digite o segundo número")
+let firstNumber = Number(prompt("Ola, digite o primeiro número"))
+let secondNumber = Number(prompt("Olá, digite o segundo número"))
 
 firstNumber = Number(firstNumber)
 secondNumber = Number(secondNumber)
@@ -16,10 +16,15 @@ alert("Subtração: " + sub)
 alert("Multiplicação: " + multi)
 alert("Divisão: " + div)
 alert("Resto da divisão: " + restDiv)
-alert("Os números inseridos são diferentes: " + equal)
 
-if (numero % 2 === 0) {
-  alert("A soma dos dois números é:par")
+if (sum % 2 === 0) {
+  alert("A soma dos dois números é: par")
 } else {
-  alert("A soma dos dois números é:impar")
+  alert("A soma dos dois números é: impar")
+}
+
+if (firstNumber === secondNumber) {
+  alert(" A soma dos dois números é: igual")
+} else {
+  alert("A soma dos dois números: diferente")
 }
